@@ -7,9 +7,9 @@ var button = ToggleButton({
     id: "syncbutton",
 	label: "Sync Bookmarks now",
 	icon: {
-      "16": "./sync.png",
-      "32": "./sync.png",
-      "64": "./sync.png"
+      "16": "./syncUpdate.png",
+      "32": "./syncUpdate.png",
+      "64": "./syncUpdate.png"
 	},
 	onChange: handleChange
 });
@@ -29,10 +29,10 @@ function handleChange(state) {
 		});
 		console.log ("Start sync");
 		//sync();
-		notifications.notify({
+		/*notifications.notify({
 			title: "Success!",
 			text: "Your bookmarks were synced successfully."
-		});
+		});*/
 	}
 }
 
